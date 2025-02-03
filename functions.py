@@ -203,8 +203,17 @@
 # print(a)
 
 
-import fidelity_dsa as fds
-fds.getdays()
+# import fidelity_dsa as fds
+# fds.getdays()
+
+
+
+
+
+username = ['bob', 'mic', 'rahul']
+email = ['bob@gmail.com', 'micgmail.com', 'rahu@hotmail']
+valid_dict = {username[i]: email[i] for i in range(len(username)) if '@' in email[i]}
+print(valid_dict)
 
 
 
