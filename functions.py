@@ -164,6 +164,56 @@
 
 
 
+# # Decorator
+# def f1(fun):
+#     def wrapper():
+#         fun()
+#         print("End decorator")
+#     return wrapper 
+
+# @f1
+# def f2():
+#     print("Fidelity International")
+
+# f2()
+
+
+
+
+
+
+
+# def decorator(fun):
+#     def wrapper(x,y):
+#         print("Adding")
+#         print(fun(x,y))
+#         print("End")
+#     return wrapper
+
+# @decorator
+# def add(x,y):
+#     return x+y
+
+# add(4,5)
+
+
+
+# from fidelity_prg import fact
+# a = fact(10)
+# print(a)
+
+
+import fidelity_dsa as fds
+fds.getdays()
+
+
+
+
+
+
+
+
+
 
 
 
