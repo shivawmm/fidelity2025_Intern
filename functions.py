@@ -148,15 +148,20 @@
 
 
 
-input1 = eval(input("Enter first input: "))
-input2 = eval(input("Enter second input: "))
-def add(x,y):
-    return x+y
-def test(a):
-    global input1
-    global input2
-    return a(input1,input2)
-print(test(add))
+# input1 = eval(input("Enter first input: "))
+# input2 = eval(input("Enter second input: "))
+# def add(x,y):
+#     return x+y
+# def test(a):
+#     global input1
+#     global input2
+#     return a(input1,input2)
+# print(test(add))
+
+
+
+
+
 
 
 
