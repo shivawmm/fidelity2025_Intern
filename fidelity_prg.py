@@ -14,3 +14,5 @@ def reverse_no(num):
         num = num // 10
     return rev_num
 print(reverse_no(112))
+
+valid = {}
