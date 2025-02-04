@@ -1,3 +1,9 @@
 from abc import *
-class Example(ABC):
-    pass
+class Printer(ABC):
+    @abstractmethod
+    def printing(self,text):
+        pass
+class HP(Printer):
+    def printing(self, text):
+        return "HP printing"
+
