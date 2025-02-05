@@ -1,0 +1,4 @@
+https://fidelity//rest//v1.0.0
+http://fidelity-123//rest/1
+https://fidelity//rest//v1.2.3
+https://hcl//rest//v1.2.3
