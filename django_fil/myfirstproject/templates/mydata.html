@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mydata</title>
+</head>
+<body>
+    <h1>my name in form of a list</h1>
+    <ul>
+        {% for i in mydata %}
+            <li>{{ i }}</li>
+        {% endfor %}
+        {% if var == 'Shivam' %}
+            <li>Hello</li>
+        {% else %}
+            <li>{{var}}</li>
+        {% endif %}
+    </ul>
+
+    <h4>Courses are:</h4>
+    <select>
+        {% for course in course %}
+            <option value="{{ course }}">{{ course }}</option>
+        {% endfor %}
+    </select>
+</body>
+</html>
