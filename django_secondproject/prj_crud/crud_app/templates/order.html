@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label, input, select, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            width: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Form</h1>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ order.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
