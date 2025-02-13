@@ -65,4 +65,5 @@ def logout_view(request):
     return redirect('welcome')
 
 def welcome(request):
-    return render(request, 'welcome.html')
+    return render(request, 'welcome.html' )
+
