@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from cbv_app.views import Myclass, ProductCreate, ProductUpdate, ProductList, ProductDelete
+from cbv_app.views import Myclass, ProductCreate, ProductUpdate, ProductList, ProductDelete, BaseView, HomeView
 from django.urls import path
 
 app_name='cbv_app'
@@ -11,4 +11,7 @@ urlpatterns = [
     path('update/<int:pk>/', ProductUpdate.as_view(), name = 'cbv_update'),
     path('list/', ProductList.as_view(), name = 'product_list'),
     path('delete/<int:pk>/', ProductDelete.as_view(), name = 'product_delete'),
+    path('base/', BaseView.as_view(), name = 'base'),
+    path('home/', HomeView.as_view(), name = 'home'),
+
 ]

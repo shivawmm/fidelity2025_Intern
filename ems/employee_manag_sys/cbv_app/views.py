@@ -2,9 +2,11 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
 from django.http import HttpResponse
-from django.views.generic import CreateView, UpdateView, ListView, DeleteView
+from django.views.generic import CreateView, UpdateView, ListView, DeleteView, TemplateView
 from cbv_app.forms import ProductForm
 from cbv_app.models import Product
+from django.contrib.auth.models import User
+from django.db import models
 
 class Myclass(View):
     def get(self, request):
@@ -41,3 +43,11 @@ class ProductDelete(DeleteView):
     success_url = reverse_lazy('cbv_app:product_list')
     template_name = 'cbv_app/create.html'
 
+class BaseView(TemplateView):
+    template_name = 'cbv_app/base.html'
+
+class HomeView(TemplateView):
+    template_name = 'cbv_app/home.html'
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
