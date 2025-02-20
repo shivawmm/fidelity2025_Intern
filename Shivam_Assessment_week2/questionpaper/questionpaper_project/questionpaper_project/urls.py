@@ -25,6 +25,8 @@ schema_view = get_schema_view(
         title="QuestionPaper API",
         default_version='v1',
         description="API for managing Question Papers",
+        contact=openapi.Contact(email="shivamsingh181002@outlook.com"),
+        license=openapi.License(name="open"),
     ),
     public=True,
 )
